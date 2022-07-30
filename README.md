@@ -1,9 +1,15 @@
-# go-socks5-proxy
+# Socks5-Proxy
+
+<div align="center">
+
+<img src="https://user-images.githubusercontent.com/71321862/181904528-319cefd3-55be-452e-8d87-f5e72c28bf21.png" alt="Gopher" width="250" height="300">
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/just5ky/socks5-server?label=Repo%20Size&logo=github)
 [![Docker](https://github.com/Just5KY/socks5-server/actions/workflows/docker.yml/badge.svg)](https://github.com/Just5KY/socks5-server/actions/workflows/docker.yml) 
 ![Docker Pulls](https://img.shields.io/docker/pulls/justsky/socks5)
 ![Docker Size](https://img.shields.io/docker/image-size/justsky/socks5)
+
+</div>
 
 Simple socks5 server using go-socks5 with authentication options
 
