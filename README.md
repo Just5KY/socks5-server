@@ -1,7 +1,9 @@
 # go-socks5-proxy
 
-![Latest tag from master branch](https://github.com/serjs/socks5-server/workflows/Latest%20tag%20from%20master%20branch/badge.svg)
-![Release tag](https://github.com/serjs/socks5-server/workflows/Release%20tag/badge.svg)
+![GitHub repo size](https://img.shields.io/github/repo-size/just5ky/socks5-server?label=Repo%20Size&logo=github)
+![Docker Build](https://github.com/just5ky/socks5-server/workflows/Docker/badge.svg) 
+![Docker Pulls](https://img.shields.io/docker/pulls/justsky/socks5)
+![Docker Size](https://img.shields.io/docker/image-size/justsky/socks5)
 
 Simple socks5 server using go-socks5 with authentication options
 
