@@ -1,9 +1,10 @@
 version: '3'
 services:
-
   socks5:
-    restart: always
-    image: serjs/go-socks5-proxy
-    env_file: .env
+    image: justsky/socks5
+    container_name: socks5
     ports:
-      - "1080:1080"
+      - '1080:1080'
+    environment:
+      - PROXY_USER=<PROXY_USER>           # Optional
+      - PROXY_PASSWORD=<PROXY_PASSWORD>   # Optional

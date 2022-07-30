@@ -1,7 +1,7 @@
 # go-socks5-proxy
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/just5ky/socks5-server?label=Repo%20Size&logo=github)
-![Docker Build](https://github.com/just5ky/socks5-server/workflows/Docker/badge.svg) 
+[![Docker](https://github.com/Just5KY/socks5-server/actions/workflows/docker.yml/badge.svg)](https://github.com/Just5KY/socks5-server/actions/workflows/docker.yml) 
 ![Docker Pulls](https://img.shields.io/docker/pulls/justsky/socks5)
 ![Docker Size](https://img.shields.io/docker/image-size/justsky/socks5)
 
@@ -9,7 +9,20 @@ Simple socks5 server using go-socks5 with authentication options
 
 ## Start container with proxy
 
-```docker run -d --name socks5 -p 1080:1080 -e PROXY_USER=<PROXY_USER> -e PROXY_PASSWORD=<PROXY_PASSWORD>  serjs/go-socks5-proxy```
+```yml
+version: '3'
+services:
+  socks5:
+    image: justsky/socks5
+    container_name: socks5
+    ports:
+      - '1080:1080'
+    environment:
+      - PROXY_USER=<PROXY_USER>           # Optional
+      - PROXY_PASSWORD=<PROXY_PASSWORD>   # Optional
+```
+
+```docker run -d --name socks5 -p 1080:1080 -e PROXY_USER=<PROXY_USER> -e PROXY_PASSWORD=<PROXY_PASSWORD>  justsky/socks5```
 
 Leave `PROXY_USER` and `PROXY_PASSWORD` empty for skip authentication options while running socks5 server.
 
