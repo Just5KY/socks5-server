@@ -41,7 +41,7 @@ jobs:
             ${{ secrets.DOCKERHUB_USERNAME }}/socks5
 
       - name: Build and push Docker images
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v3
         with:
           context: .
           file: justsky.dockerfile
