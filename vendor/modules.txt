@@ -6,6 +6,6 @@ github.com/armon/go-socks5
 github.com/caarlos0/env
 # github.com/stretchr/testify v1.8.0
 ## explicit
-# golang.org/x/net v0.0.0-20180406214816-61147c48b25b
+# golang.org/x/net v0.7.0
 ## explicit
 golang.org/x/net/context
